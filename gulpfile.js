@@ -32,7 +32,7 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
-		])
+	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
@@ -70,20 +70,26 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.css',
 		'app/css/libs.min.css'
-		])
-	.pipe(gulp.dest('dist/css'))
+	])
+		.pipe(gulp.dest('dist/css'))
 
 	var buildSass = gulp.src('app/sass/**/*.sass') // Переносим стили в продакшен
-	.pipe(gulp.dest('dist/sass'))
+		.pipe(gulp.dest('dist/sass'))
+
+	var buildLibs = gulp.src('app/libs/**/*') // Переносим стили в продакшен
+		.pipe(gulp.dest('dist/libs'))
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('dist/fonts'))
+		.pipe(gulp.dest('dist/fonts'))
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('dist/js'))
+		.pipe(gulp.dest('dist/js'))
 
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist'));
+
+	var buildPHP = gulp.src('app/*.php') // Переносим HTML в продакшен
+		.pipe(gulp.dest('dist'));
 
 });
 
