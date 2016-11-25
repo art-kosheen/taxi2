@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
+	<title>UBER</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,11 +69,18 @@
 			<input type="text" id="skill" class="form-input" placeholder="3 года">
 
 			<label for="phone">Телефон для связи</label>
-			<input type="text" id="phone" class="form-input" placeholder="+7990081212">
+			<input type="text" id="phone" class="form-input" placeholder="+7 000-000-0000" data-mask="+7 000-000-0000">
+
 
 			<button type="submit" class="submit">Отправить</button>
 
 		</form>
+	</div>
+
+	<div class="form-popup">
+		<h2 class="form-title">Ваша заявка принята!</h2>
+
+		<a href="#" class="popup-submit">ok</a>
 	</div>
 
 	<section class="content">
@@ -141,6 +148,7 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/mask/jquery.mask.min.js"></script>
 
 
 </body>

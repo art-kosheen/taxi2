@@ -96,13 +96,31 @@ a {
   padding: 6px 10px;
   margin-bottom: 5px; }
 
-.submit {
+.submit, .form-popup .popup-submit {
   width: 100%;
   padding: 10px;
   border: none;
   margin-top: 7px;
   background-color: #4cc8de;
   color: #fff; }
+
+.form-popup {
+  width: 320px;
+  padding: 25px;
+  background-color: #f1f1f1;
+  border: 1px solid #cdcdd3;
+  position: fixed;
+  margin-left: -160px;
+  top: 35%;
+  left: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 100px 2000px;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 100px 2000px;
+  z-index: 99999;
+  display: none; }
+  .form-popup .popup-submit {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase; }
 
 /* ---------- content begin----------*/
 .content-item {
@@ -166,26 +184,25 @@ a {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  /**/
+  .form-wrap {
+    position: static;
+    margin: 20px auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important; } }
+  /**/ }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /**/ }
+@media only screen and (max-width: 576px) {
+  /**/
+  .form-wrap {
+    width: 320px; }
+  .header {
+    padding-top: 0; }
+  .item-img {
+    float: none;
+    margin: auto; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
