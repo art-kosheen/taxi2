@@ -1,8 +1,5 @@
 @import "bourbon/bourbon"
 
-//Load Libs SASS
-@import "app/libs/animate/animate.sass"
-
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -29,11 +26,12 @@ body textarea:required:valid
 html
 	width: 100%
 	height: 100%
+	font-size: 14px !important
 
 body
-	background-color: green
 	width: 100%
 	height: 100%
+	font-size: 1rem !important
 
 *
 	box-sizing: border-box
@@ -50,6 +48,82 @@ p
 
 a
 	text-decoration: none
+
+
+/* ---------- header begin----------*/
+
+.header
+	min-height: 650px
+	background-image: url(../img/bg.jpg)
+	background-size: cover
+	background-position: center center
+	padding-top: rem(80px)
+	color: #fff !important
+
+.header-title
+	font-size: rem(50px)
+
+.header-description
+	font-size: rem(17px)
+
+.header-comission
+	font-size: rem(30px)
+	margin-top: 25px
+
+/* ---------- form begin ----------*/
+
+.form-wrap
+	width: 350px
+	background-color: #f1f1f1
+	padding: 25px
+	border: 1px solid #cdcdd3
+	position: absolute
+	right: 5%
+	top: 20px
+	z-index: 10
+	label
+		display: inline-block
+		margin-bottom: 5px
+		font-weight: bold
+
+.form-title
+	margin-top: 0
+	text-align: center
+
+.form-input
+	display: block
+	width: 100%
+	border: 1px solid #cdcdd3
+	border-radius: 3px
+	padding: 6px 10px
+	margin-bottom: 5px
+
+.submit
+	width: 100%
+	padding: 10px
+	border: none
+	margin-top: 7px
+	background-color: #4cc8de
+	color: #fff
+
+/* ---------- content begin----------*/
+
+.content-item
+	clear: both
+	margin-bottom: rem(30px)
+
+.item-img
+	float: left
+	width: 200px
+	height: 200px
+	margin-right: 50px
+	background-size: contain
+	background-position: bottom center
+	background-repeat: no-repeat
+
+.item-text-title
+	font-size: rem(24px)
+
 
 //Custom Styles Here
 
