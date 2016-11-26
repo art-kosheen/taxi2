@@ -62,7 +62,8 @@ a {
   font-size: 3.125rem; }
 
 .header-description {
-  font-size: 1.0625rem; }
+  font-size: 1.0625rem;
+  padding-left: 20%; }
 
 .header-comission {
   font-size: 1.875rem;
@@ -121,6 +122,19 @@ a {
     display: inline-block;
     text-align: center;
     text-transform: uppercase; }
+
+.scroll-wrap {
+  text-align: center; }
+
+.scroll {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 40px 0;
+  background-color: #4cc8de;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 320px; }
 
 /* ---------- content begin----------*/
 .content-item {
